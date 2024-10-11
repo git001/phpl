@@ -143,6 +143,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "php-rs"
+version = "0.1.0"
+dependencies = [
+ "evaluator",
+]
+
+[[package]]
 name = "phpl"
 version = "0.1.0"
 dependencies = [

@@ -1,4 +1,13 @@
+[package]
+name = "php-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+evaluator = { path = "evaluator" }
+
 [workspace]
+resolver = "2"
 members = [
 	"phpl",
 	"evaluator",
@@ -9,3 +18,9 @@ opt-level = "s"
 lto = "thin"
 codegen-units = 1
 strip = true
+
+[[bin]]
+path = "phpl/src/main.rs"
+name = "phpl-rs"
+test = false
+bench = false
